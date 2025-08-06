@@ -1,0 +1,53 @@
+{
+  "name": "disaster-coordination-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:e2e": "cypress open",
+    "test:e2e:headless": "cypress run"
+  },
+  "dependencies": {
+    "@supabase/auth-helpers-nextjs": "^0.8.7",
+    "@supabase/auth-helpers-react": "^0.4.2",
+    "@supabase/supabase-js": "^2.39.3",
+    "@tanstack/react-query": "^4.32.6",
+    "browser-image-compression": "^2.0.2",
+    "clsx": "^2.0.0",
+    "exif-js": "^2.3.0",
+    "leaflet": "^1.9.4",
+    "leaflet.heat": "^0.2.0",
+    "leaflet.markercluster": "^1.5.3",
+    "next": "14.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1",
+    "tailwind-merge": "^1.14.0",
+    "zustand": "^4.4.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.4",
+    "@testing-library/react": "^13.4.0",
+    "@types/leaflet": "^1.9.6",
+    "@types/leaflet.heat": "^0.2.0",
+    "@types/leaflet.markercluster": "^1.5.1",
+    "@types/node": "^20.5.2",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.4",
+    "autoprefixer": "^10.4.15",
+    "cypress": "^13.2.0",
+    "eslint": "^8.48.0",
+    "eslint-config-next": "14.2.4",
+    "jsdom": "^22.1.0",
+    "postcss": "^8.4.28",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.1.6",
+    "vitest": "^0.34.4"
+  }
+}

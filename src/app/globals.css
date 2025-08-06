@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Leaflet CSS - Import required styles */
+@import 'leaflet/dist/leaflet.css';
+
+/* Custom styles for the disaster coordination app */
+.leaflet-container {
+  height: 400px;
+  width: 100%;
+  z-index: 0;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+}
+
+.disaster-card {
+  @apply bg-white rounded-lg shadow-md p-4 border border-gray-200;
+}
+
+.disaster-button-primary {
+  @apply bg-disaster-blue text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors;
+}
+
+.disaster-button-secondary {
+  @apply bg-gray-200 text-gray-800 px-4 py-2 rounded-md hover:bg-gray-300 transition-colors;
+}
+
+.disaster-button-danger {
+  @apply bg-disaster-red text-white px-4 py-2 rounded-md hover:bg-red-700 transition-colors;
+}
+
+.urgency-high {
+  @apply border-l-4 border-disaster-red bg-red-50;
+}
+
+.urgency-medium {
+  @apply border-l-4 border-disaster-orange bg-orange-50;
+}
+
+.urgency-low {
+  @apply border-l-4 border-disaster-yellow bg-yellow-50;
+}
+
+.status-open {
+  @apply bg-disaster-red text-white;
+}
+
+.status-claimed {
+  @apply bg-disaster-orange text-white;
+}
+
+.status-fulfilled {
+  @apply bg-disaster-green text-white;
+}
